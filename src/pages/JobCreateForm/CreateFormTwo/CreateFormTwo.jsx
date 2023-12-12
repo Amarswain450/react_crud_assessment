@@ -94,11 +94,13 @@ const CreateFormTwo = () => {
                             <div className={`flex flex-wrap -mx-3 ${errors?.experienceMinimun ? "mb-0" : "mb-2"}`}>
                                 <div className="w-full md:w-1/2 px-3">
                                     <TextInput
+                                        type="number"
                                         placeholder="Minimum"
                                         id="experienceMinimun"
                                         name="experienceMinimun"
                                         value={experienceMinimun}
                                         onChange={createFormTwoHandler}
+                                        pattern="[0-9]*"
                                     />
                                     {
                                         errors?.experienceMinimun && (
@@ -108,11 +110,13 @@ const CreateFormTwo = () => {
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
                                     <TextInput
+                                        type="number"
                                         placeholder="Maximum"
                                         id="experienceMaximum"
                                         name="experienceMaximum"
                                         value={experienceMaximum}
                                         onChange={createFormTwoHandler}
+                                        pattern="[0-9]*"
                                     />
                                     {
                                         errors?.experienceMaximum && (
@@ -127,11 +131,13 @@ const CreateFormTwo = () => {
                             <div className={`flex flex-wrap -mx-3 ${errors?.salaryMinimun ? "mb-0" : "mb-2"}`}>
                                 <div className="w-full md:w-1/2 px-3">
                                     <TextInput
+                                        type="number"
                                         placeholder="Minimum"
                                         id="salaryMinimun"
                                         name="salaryMinimun"
                                         value={salaryMinimun}
                                         onChange={createFormTwoHandler}
+                                        pattern="[0-9]*"
                                     />
                                     {
                                         errors?.salaryMinimun && (
@@ -141,11 +147,13 @@ const CreateFormTwo = () => {
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
                                     <TextInput
+                                        type="number"
                                         placeholder="Maximum"
                                         id="salaryMaximum"
                                         name="salaryMaximum"
                                         value={salaryMaximum}
                                         onChange={createFormTwoHandler}
+                                        pattern="[0-9]*"
                                     />
                                     {
                                         errors?.salaryMaximum && (
@@ -160,6 +168,8 @@ const CreateFormTwo = () => {
                                         Total employee
                                     </label>
                                     <TextInput
+                                        type="number"
+                                        pattern="[0-9]*"
                                         id="total-employee"
                                         placeholder="ex. 100"
                                         name="totalEmployee"

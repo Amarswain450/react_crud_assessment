@@ -106,6 +106,8 @@ const JobEditFormTwo = () => {
                             <div className={`flex flex-wrap -mx-3 ${errors?.experienceMinimun ? "mb-0" : "mb-2"}`}>
                                 <div className="w-full md:w-1/2 px-3">
                                     <TextInput
+                                        type="number"
+                                        pattern="[0-9]*"
                                         placeholder="Minimum"
                                         id="experienceMinimun"
                                         name="experienceMinimun"
@@ -120,6 +122,8 @@ const JobEditFormTwo = () => {
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
                                     <TextInput
+                                        type="number"
+                                        pattern="[0-9]*"
                                         placeholder="Maximum"
                                         id="experienceMaximum"
                                         name="experienceMaximum"
@@ -139,6 +143,8 @@ const JobEditFormTwo = () => {
                             <div className={`flex flex-wrap -mx-3 ${errors?.salaryMinimun ? "mb-0" : "mb-2"}`}>
                                 <div className="w-full md:w-1/2 px-3">
                                     <TextInput
+                                        type="number"
+                                        pattern="[0-9]*"
                                         placeholder="Minimum"
                                         id="salaryMinimun"
                                         name="salaryMinimun"
@@ -153,6 +159,8 @@ const JobEditFormTwo = () => {
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
                                     <TextInput
+                                        type="number"
+                                        pattern="[0-9]*"
                                         placeholder="Maximum"
                                         id="salaryMaximum"
                                         name="salaryMaximum"
@@ -172,6 +180,8 @@ const JobEditFormTwo = () => {
                                         Total employee
                                     </label>
                                     <TextInput
+                                        type="number"
+                                        pattern="[0-9]*"
                                         id="total-employee"
                                         placeholder="ex. 100"
                                         name="totalEmployee"

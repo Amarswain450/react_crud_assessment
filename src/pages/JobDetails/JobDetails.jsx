@@ -41,6 +41,9 @@ const JobDetails = () => {
             case workType === "in-office":
                 workName = "In-office";
                 break;
+            case workType === "wfo":
+                workName = "In-office";
+                break;
             default:
                 workName = "WFH";
         }
