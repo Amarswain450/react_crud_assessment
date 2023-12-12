@@ -29,7 +29,7 @@ const JobDetails = () => {
 
     //check work type
     const checkWorkType = (workType) => {
-        workType = workType.toLowerCase();
+        workType = workType?.toLowerCase();
         let workName;
         switch (true) {
             case workType === "office":
