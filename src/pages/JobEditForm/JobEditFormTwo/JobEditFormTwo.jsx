@@ -11,7 +11,6 @@ import RadioInput from '../../../shared/RadioInput/RadioInput';
 
 const JobEditFormTwo = () => {
     const { id } = useParams();
-    console.log(id, ",,,,,,");
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const { firstFormJobData } = useSelector((state) => state.firstFormReducer);
